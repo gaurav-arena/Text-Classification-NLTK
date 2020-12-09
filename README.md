@@ -2,7 +2,8 @@
 **OBJECTIVE:**
 Classification/Prediction of text which belongs to nine different categories/books of the Gutenberg’s digital corpus. 
 
-**DATA PREPARATION AND CLEANING:**
+**DATA PREPARATION AND CLEANING**
+
 The data needs to be prepared and cleaned and it is an essential part of this assignment. Nine different books are selected based on their authors from the Gutenberg's digital corpus for having nine distinct classes with the aim of having distinct targets for the model. The steps involved in the data preparation process are:
 
 1. Retrieval and selection of texts from Gutenberg's digital corpus. The NLTK library includes a small selection of texts from the Project Gutenberg electronic text archive, which contains some 25,000 free digital books. Thus to begin with, first the NLTK library was imported. 
@@ -15,10 +16,10 @@ The data needs to be prepared and cleaned and it is an essential part of this as
 **WORD TO VECTOR TRANFORMATION**
 Feature transformation is an approach for converting all the textual data into numeric form as the Machine Learning Algorithms work only with numeric data. Since we only have textual data available, the numeric features are extracted by using two different techniques which are Bag-of-Words (BOW) and Term Frequency-Inverse Document Frequency (TF-IDF). These are discussed below.
 
-*Bag-of-Words (BOW):*
+*Bag-of-Words (BOW)-*
 The Bag-of-Words preserves the words present in the corpus. The words are referred as a feature for the documents. The frequency of each word is calculated in the current document, in this way the word features are engineered or extracted from the textual corpus. This was done by using the ‘CountVectorizer’ function, Min_df was set to 3, meaning that words which had a document frequency of less than 3 were ignored. CountVectorizer was also set to take both unigrams and bigrams into consideration. Only the top 5000 most important features based on the frequency of the words were considered.
 
-*TF-IDF*
+*TF-IDF-*
 The Term Frequency-Inverse Document Frequency is the most popular method to covert the textual data into numerical feature. This method helps us to highlight words which are interesting and unique in the particular document but not across all the documents. It also assigns a particular integer numbers to these each of these words.
 The Term Frequency or  TF = (Frequency of the word in the sentence) / (Total number of words in the sentence)
 The Inverse Document Frequency or IDF: (Total number of sentences (documents))/(Number of sentences (documents) containing the word)
@@ -29,7 +30,8 @@ The Machine Learning algorithms we used and compared for this classification pro
 2. Support Vector Machine
 3. K-Nearest Neighbor
 4. Decision Tree
-*Cross Validation:*
+
+*Cross Validation-*
 The cross validation is the most important part as it’s essential to validate the stability of the machine learning model and well it would generalize the new data. The split of the data needs to be done carefully if the train data is less we risk the important patterns in the data set which in turn increases the error in the process. Hence ample data is required for the train data set, the K fold cross validation does the this exactly. 
 In this process the data is divided into k subsets, and hence the same process is repeated k times. Every time one of the k subset is used as the test set the other k-1 subsets are combined to form a training data set. code the KFold is a function consists parameters for splitting the data number of times, shuffle, and the random_state
 The algorithm for the cross validation is given below:
