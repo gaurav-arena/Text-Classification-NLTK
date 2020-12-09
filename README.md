@@ -25,7 +25,7 @@ The Term Frequency-Inverse Document Frequency is the most popular method to cove
 The Term Frequency or  TF = (Frequency of the word in the sentence) / (Total number of words in the sentence)
 The Inverse Document Frequency or IDF: (Total number of sentences (documents))/(Number of sentences (documents) containing the word)
 
-**Modelling**
+**Modeling**
 
 The Machine Learning algorithms we used and compared for this classification problem are:
 1. Random Forest
