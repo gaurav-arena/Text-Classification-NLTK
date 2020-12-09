@@ -1,6 +1,6 @@
 # Text-Classification-NLTK
 **OBJECTIVE:**
-Classification/Prediction of text which belongs to nine different categories/books of the Gutenberg’s digital corpus. 
+Classification/Prediction of texts which belongs to nine different categories/books of the Gutenberg’s digital corpus by using various ML classification algorithm and then choosing the best algorithm for the purpose depending on their performance. 
 
 **DATA PREPARATION AND CLEANING**
 
@@ -25,6 +25,7 @@ The Term Frequency or  TF = (Frequency of the word in the sentence) / (Total num
 The Inverse Document Frequency or IDF: (Total number of sentences (documents))/(Number of sentences (documents) containing the word)
 
 **Modelling**
+
 The Machine Learning algorithms we used and compared for this classification problem are:
 1. Random Forest
 2. Support Vector Machine
@@ -44,6 +45,7 @@ The algorithm for the cross validation is given below:
 The accuracy for SVM algorithm (for both BOW and TF-IDF transformations) was the highest compared to all the other models, we have selected it as our champion model.
 
 **Error Analysis**
+
 Continuing with our best model (i.e. the Linear SVM), we looked at the confusion matrix in order to see the discrepancies between predicted and actual labels if any. And from the confusion matrix, we observed that most of the predictions made by the model were correct (as vast majority of the predictions were present at the diagonal). But there were a few misclassification and thus we tried to find the possible reason behind these misclassifications.
 
 
