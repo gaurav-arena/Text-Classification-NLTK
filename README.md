@@ -14,6 +14,7 @@ The data needs to be prepared and cleaned and it is an essential part of this as
 6. The Dataframe is then shuffled to avoid any bias and then we perform the word to vector transformation.
 
 **WORD TO VECTOR TRANFORMATION**
+
 Feature transformation is an approach for converting all the textual data into numeric form as the Machine Learning Algorithms work only with numeric data. Since we only have textual data available, the numeric features are extracted by using two different techniques which are Bag-of-Words (BOW) and Term Frequency-Inverse Document Frequency (TF-IDF). These are discussed below.
 
 *Bag-of-Words (BOW)-*
